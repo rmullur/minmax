@@ -12,12 +12,12 @@ layout: default
   </div>
   <div class="about-header">
     {%- if site.moving.avatar_url -%}
-    <img class="about-avatar" src="{{ site.moving.avatar_url }}" />
+    <img class="about-avatar" src="{{ site.moving.avatar_url }}" style="max-width: 200px; height: auto;" />
     {%- endif -%} {%- if site.author -%}
     <div class="about-info">
-      <div class="about-your-name">
+      <!-- <div class="about-your-name">
         {{ site.author | escape }}
-      </div>
+      </div> -->
       {%- endif -%} {%- if site.moving.about_you -%}
       <p class="about-description">
         {{ site.moving.about_you | escape }}
