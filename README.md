@@ -1,4 +1,6 @@
-# moving
+# minmax
+
+Renaming Moving to Minmax, with some custom changes. Read below for how moving works.
 
 [![Gem Version](https://badge.fury.io/rb/moving.svg)](https://badge.fury.io/rb/moving) ![Build Status](https://github.com/huangyz0918/moving/actions/workflows/deploy.yml/badge.svg) ![progress](https://img.shields.io/badge/progress-releasing-blue.svg) ![](https://img.shields.io/gem/dt/moving)
 
