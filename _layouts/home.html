@@ -10,6 +10,25 @@ layout: default
     <p class="home-heading">{{ site.title }}</p>
     <p class="home-sub-heading">{{ site.description }}</p>
   </div>
+  <div class="about-header">
+    {%- if site.moving.avatar_url -%}
+    <img class="about-avatar" src="{{ site.moving.avatar_url }}" />
+    {%- endif -%} {%- if site.author -%}
+    <div class="about-info">
+      <div class="about-your-name">
+        {{ site.author | escape }}
+      </div>
+      {%- endif -%} {%- if site.moving.about_you -%}
+      <p class="about-description">
+        {{ site.moving.about_you | escape }}
+      </p>
+      {%- endif -%} {%- include social.html -%}
+    </div>
+  </div>
+
+  <div class="about-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
 
   {%- if site.posts.size > 0 -%}
   <ul class="post-list">
