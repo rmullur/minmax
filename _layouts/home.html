@@ -20,9 +20,11 @@ layout: default
       </div> -->
       {%- endif -%} {%- if site.moving.about_you -%}
       <p class="about-description">
-        {{ site.moving.about_you | escape }}
+        {{ site.moving.about_you }}
       </p>
-      {%- endif -%} {%- include social.html -%}
+      {%- endif -%} 
+      <div style="margin-top: 20px;"></div>
+      {%- include social.html -%}
     </div>
   </div>
 
