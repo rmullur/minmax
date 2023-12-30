@@ -136,14 +136,13 @@
   <li>
     <a class="black-link" href="{{ 'feed.xml' | relative_url }}">[RSS]</a>
   </li>
-  {%- endif -%}
-    {%- endif -%}{%- endfor -%} {%- if social.substack -%}
+  {%- endif -%} {%- if social.substack -%}
   <li>
     <a
       class="black-link"
       href="https://{{ social.substack | cgi_escape | escape }}.substack.com"
-    > [Substack]</a
-    >
+    > [Substack]
+    </a>
   </li>
   {%- endif -%}
 </ul>
