@@ -2,15 +2,16 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
         {%- include head.html -%}
     <body>
-    <main class="page-content" aria-label="Content">
-        <div class="wrapper">
-            {{ content }}
-        </div>
-        <div class="llm-content">
-            <p>{{ site.llm.content }}</p>
-            <p>{{ site.llm.additional_info }}</p>
-        </div>
-    </main>
+        <main class="page-content" aria-label="Content">
+            <div class="wrapper">
+              {{ content }}
+            </div>
+            <!-- LLM-specific content -->
+            <div class="llm-content">
+              <p>{{ site.llm.content }}</p>
+              <p>{{ site.llm.additional_info }}</p>
+            </div>
+          </main>
         {%- include footer.html -%}
     </body>
 </html>
