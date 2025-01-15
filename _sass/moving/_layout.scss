@@ -320,7 +320,6 @@
       border-radius: 50%; // Make the image circular
       overflow: hidden; // Ensure the image doesn't overflow the container
       object-fit: cover; // Ensure the image covers the entire area
-      border: 1px solid $grey-color-light; // Optional: Add a border
       margin: 0 2rem 0 0;
     }
 
