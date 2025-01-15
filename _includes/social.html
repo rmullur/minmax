@@ -1,5 +1,4 @@
 {%- assign social = site.moving.social_links -%}
-{%- assign resume = resume -%}
 
 <ul class="social-media-list">
   {%- if social.dribbble -%}
@@ -146,7 +145,7 @@
     </a>
   </li>
   {%- endif -%}
-  {%- if resume -%}
-  <a class="black-link" href="{{ site.url }}{{ resume.path }}">[Resume]</a>
+  {%- if site.resume -%}
+  <a class="black-link" href="{{ site.url }}{{ site.resume.path }}">[Resume]</a>
   {%- endif -%}
 </ul>
